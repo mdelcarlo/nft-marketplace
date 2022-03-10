@@ -34,6 +34,8 @@ module.exports = {
     mumbai: {
       url: process.env.POLYGON_STAGING_ALCHEMY_KEY,
       accounts: [process.env.PRIVATE_KEY],
+      gasPrice: 30000000000,
+      saveDeployments: true,
     },
     polygonMainnet: {
       url: process.env.POLYGON_STAGING_ALCHEMY_KEY,
